@@ -9,7 +9,6 @@ function leerArchivo(e) {
       var contenido = e.target.result;
       mostrarContenido(contenido);
       stringText = contenido;
-  
     }
     lector.readAsText(archivo);
   }
@@ -48,3 +47,4 @@ function variablesMostrar(){
     var elementoMat = document.getElementById('expresiones-boo');
     elementoMat.innerHTML = txt_imprimir;
   }
+  
