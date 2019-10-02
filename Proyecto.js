@@ -9,7 +9,6 @@
 //listo
 //[\w]+( |)=( |)[\w]+( |)[\W]( |)[\w]+( |);
 
-    
 //Expresiones matematicas sencillas
 let expresionMatematicos = /[\w]+( |)=( |)[\w]+( |)[+-\/\*]( |)[\w]+( |);/
 
