@@ -75,4 +75,11 @@ function encriptarMostrar(){
  var elementoMat = document.getElementById('expresiones-enc');
  elementoMat.innerHTML = txt_imprimir;
 }
+//Eliminar comentarios del codigo
+function eliminarComentarios(){
 
+  let eliminar = stringText.replace( /\/[\*|][\S\s]+?[\*]\/|\/[\/].*/g, "");
+  var elementoMat = document.getElementById('contenido-archivo');
+  elementoMat.innerHTML = eliminar;
+  
+  }
