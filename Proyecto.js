@@ -1,4 +1,5 @@
 let stringText; //variable global
+
 function leerArchivo(e) {
     var archivo = e.target.files[0];
     if (!archivo) {
@@ -22,3 +23,6 @@ function leerArchivo(e) {
   document.getElementById('file-input').addEventListener('change', leerArchivo, false);
   
   //Trabajar con la variable stringText contiene todo el archivo.java
+
+
+
