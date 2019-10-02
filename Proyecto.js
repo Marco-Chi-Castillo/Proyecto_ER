@@ -48,4 +48,31 @@ function variablesMostrar(){
     var elementoMat = document.getElementById('expresiones-boo');
     elementoMat.innerHTML = txt_imprimir;
   }
+
+//Encriptacion
+function encriptarMostrar(){
+  let txt_imprimir = "";
+  let texto = stringText;
+  let en1, en2, en3, en4, en5;
+  var palabrasEn = new Array();
+  let  comillas = texto.match(/(".*?"|'.*?')/g);
+  for(let i = 0; i< comillas.length;i++){
+       en1= comillas[i].replace(/(a)/gim,"1");
+       en2= en1.replace(/(e)/gim,"2");
+       en3= en2.replace(/(i)/gim,"3");
+       en4= en3.replace(/(o)/gim,"4");
+       en5= en4.replace(/(u)/gim,"5");
+       en6= en5.replace(/(l)/gim,"szs");
+       en7= en6.replace(/(n)/gim,"Q==");
+       en8= en7.replace(/(s)/gim,"ZzaA");
+       palabrasEn[i] = en8;
+  }
   
+  for(let i = 0; i< palabrasEn.length;i++){
+     txt_imprimir = txt_imprimir + `${i+1} = ${String(palabrasEn[i])} <br/>`;
+ }
+ 
+ var elementoMat = document.getElementById('expresiones-enc');
+ elementoMat.innerHTML = txt_imprimir;
+}
+
