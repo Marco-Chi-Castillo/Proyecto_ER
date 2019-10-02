@@ -1,4 +1,5 @@
 let stringText; //variable global
+
 function leerArchivo(e) {
     var archivo = e.target.files[0];
     if (!archivo) {
