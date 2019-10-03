@@ -20,7 +20,7 @@ function leerArchivo(e) {
   }
   
   document.getElementById('file-input').addEventListener('change', leerArchivo, false);
-  
+
   //Trabajar con la variable stringText contiene todo el archivo.java
 
   //Buscar variables
@@ -41,7 +41,8 @@ function variablesMostrar(){
     let booleanos = new Array();
     //expresion regular que detecta expresiones booleanas de declaracion
     //y dentro de funciones como if, while, for
-    booleanos = stringText.match(/(|\()[\w.]+( |)[=<>!|]+( |)[\w]+(;|\))/g);
+    //(|\()[\w.]+( |)(\={2}|\<[=]|\>[=]|\![=]|\|)( |)[\w]+(;|\))
+    booleanos = stringText.match(/(|\()[\w.]+( |)(\={2}|\<[=]|\>[=]|\![=]|\|)( |)[\w]+(;|\))/g);
    for(let i =0; i < booleanos.length; i++){
         txt_imprimir = txt_imprimir + `${i+1} = ${String(booleanos[i])} <br/>`; 
     }
