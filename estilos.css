@@ -1,30 +1,98 @@
 #logo{
     width: 440px;
     height: 100px;
+    float:right; 
     background-image:url(imagen/logo_itsva.gif);
     background-size: contain;
 }
 body{
-    background: #FFFCB2;
+    background: #e6f2ff;
 }
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
 h1{
     text-align: center;
-}
-
-input{
+    color: #004080;
     padding: 20px;
-}
-
-input:hover{
-    transform: scale(1.1,1.1);
+    text-shadow: 2px 2px #33cccc;
+    font-style:italic;
+    font-weight:bold;
+    font-size:2em;
+    font-color:#ffffff;
+    font-family:'Helvetica','Verdana','Monaco',sans-serif;
 }
 
 h3{
     text-align: center;
-    background-color:#FED085;
-    padding: 20px;
-    width: 20%;
+    border-radius: 10px;
+    background-color:#3399ff;
+    color:white;
+    clear:both;
+    padding:5px;
+    font-style:italic;
+    font-weight:bold;
+}
+h2{
+    text-align: center;
+    font-family:Monaco,Georgia,Times,serif;
+    color: #cc6600;
+    text-shadow: 1px 1px 1px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer{
+    border-radius: 10px;
+    background-color:#3399ff;
+    color:white;
+    clear:both;
+    text-align:center;
+    font-style:italic;
+    padding:5px; 
+}
+
+#texto{
+    text-align: center;
+    color: white;
+}
+
+div#lector{
+    position: sticky;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #008CBA;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #1a71a9;
+
+}
+div#lector:hover{
+    transform: scale(1.1,1.1);
+}
+
+input#file-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100;
+    height: 100px;
+    opacity: 0;
+}
+
+button{
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: #008CBA;
+      color: white;
 }
 pre{
-    padding: 20px;
+    padding: 16px;
+    margin: 16px;
 }
